@@ -17,7 +17,7 @@ import java.util.UUID;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/comprobantes")
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173", "https://soluciones-integrales-juri.vercel.app"})
+
 public class ComprobanteController {
 
     private final ComprobanteService comprobanteService;
