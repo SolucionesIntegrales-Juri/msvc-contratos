@@ -15,7 +15,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/contratos")
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173"})
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173","https://soluciones-integrales-juri.vercel.app")
 public class ContratoController {
 
     private final ContratoService  contratoService;
