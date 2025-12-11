@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.UUID;
 
-@FeignClient(name = "msvc-clientes")
+@FeignClient(
+        name = "msvc-clientes",
+        url = "${MSVC_CLIENTES_URL:http://138.68.2.13:8082}"
+)
 public interface ClienteFeignClient {
 
     @GetMapping("/api/clientes/contratos/{id}")
